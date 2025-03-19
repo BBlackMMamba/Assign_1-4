@@ -6,13 +6,23 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Tailwind Css</title>
 </head>
-<body class="flex justify-center items-center h-screen">
-    <main class="container lg mx-auto p-20 border-2 border-indigo-600">
-        <h1 class="text-center text-2xl uppercase font-semibold mb-10 text-indigo-500">Welcome To My Website</h1>
+<body class="flex flex-col gap-y-2 justify-center items-center ">
+    <header class="flex w-full flex-row justify-between px-5 bg-sky-900">
+        <img src="/assets/icons/icons8-tailwind-css (1).svg" alt="Logo" class="w-15">
+        <nav class="h-16 w-2/4 flex items-center justify-end">
+            <ul class="flex flex-row space-x-4 text-white uppercase">
+                <li class="item-2 transition hover:scale-110 hover:font-bold"><a href="#">Home</a></li>
+                <li class="item-3 transition hover:scale-110 hover:font-bold"><a href="#">About</a></li>
+                <li class="item-4 transition hover:scale-110 hover:font-bold"><a href="#">Services</a></li>
+                <li class="item-5 transition hover:scale-110 hover:font-bold"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero mx-auto md:w-[90%] sm:mx-5 p-20 border-1 border-sky-600">
+        <h1 class="text-center text-2xl uppercase font-semibold mb-10 text-sky-600">Welcome To My Website</h1>
         <h2 class="text-lx text-gray-500 font-medium uppercase">About This Site</h2>
         <p class="my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum dolorum facilis veniam ut temporibus. 
             Quasi saepe odio maiores quas ipsam voluptates sapiente, 
@@ -20,11 +30,44 @@
         </p>
         <h3 class="text-lx uppercase font-medium underline">Contact Me</h3>
         <p class="mt-4 mb-7">If You Have Any Questions Feel Free To Reach Out.</p>
-        <a href="#" class="text-indigo-500 p-2 hover:underline hover:drop-shadow-2xl hover:bg-indigo-600 hover:text-white transform focus:text-sm transition duration-300">
-            Visit My Portfolio
+        <a href="#" class="text-sky-900 font-semibold p-2 hover:underline hover:drop-shadow-2xl hover:bg-sky-600 hover:text-white transform focus:text-sm transition duration-300">
+            To product List
         </a>
+    </section>
+    <section class="flex flex-col items-center w-full p-3 my-10 gap-y-9">
+        <h2 class="our-services text-xl font-bold uppercase text-sky-700">Our Services</h2>
+        <div class="cards flex flex-row mx-auto w-[90%] justify-around space-x-4 text-white">
+            <div class="card-1 rounded h-90 flex-1 bg-gradient-to-r from-blue-500 to bg-blue-700 p-5 hover:scale-105">
+                <div class="card-content flex flex-col items-center gap-y-9 my-5">
+                    <h2 class="title font-semibold text-lg">Web Design</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque nec eros et nisl cursus convallis non ac nulla. 
+                        Curabitur ut sapien malesuada, gravida purus in, viverra nisl.</p>
+                    <button class="btn cursor-pointer text-sm ring-1 rounded p-2 hover:shadow-md hover:shadow-white hover:font-semibold focus:scale-85">Learn More</button>
+                </div>
+            </div>
+            <div class="card-2 rounded h-90 flex-1 bg-gradient-to-r from-cyan-500 to bg-cyan-700 p-5 hover:scale-105">
+                <div class="card-content flex flex-col items-center gap-y-9 my-5">
+                    <h3 class="title font-semibold text-lg ">App Development</h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque nec eros et nisl cursus convallis non ac nulla. 
+                        Curabitur ut sapien malesuada, gravida purus in, viverra nisl.
+                    </p>
+                    <button class="btn cursor-pointer text-sm ring-1 rounded p-2 hover:shadow-md hover:shadow-white hover:font-semibold focus:scale-85">Learn More</button>
+                </div>
+            </div>
+            <div class="card-3 rounded h-90 flex-1 bg-gradient-to-r from-teal-500 to bg-teal-700 p-5 hover:scale-105">
+                <div class="card-content flex flex-col items-center gap-y-9 my-5">
+                    <h3 class="title font-semibold text-lg">SEO Optimization</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque nec eros et nisl cursus convallis non ac nulla. 
+                        Curabitur ut sapien malesuada, gravida purus in, viverra nisl.</p>
+                    <button class="btn cursor-pointer text-sm ring-1 rounded p-2 hover:shadow-md hover:shadow-white hover:font-semibold focus:scale-85">Learn More</button>
+                </div>
+            </div>
+        </div>
 
-
-    </main>
+    </section>
 </body>
 </html>
